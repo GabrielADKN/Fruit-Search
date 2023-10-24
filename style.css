@@ -1,0 +1,98 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+:focus {
+  /* TODO */
+}
+
+body {
+  /* TODO */
+  background-image: linear-gradient(to right, orange, #ff6347);
+  color: #333;
+}
+
+.search-container {
+  /* TODO */
+  width: 600px;
+  background: #ffffffab;
+  margin: 200px auto 0;
+  border-radius: 5px;
+}
+.search-container input,
+.search-container .suggestions {
+  /* TODO */
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  font-size: large;
+}
+.search-container input {
+  /* TODO */
+  border-bottom: 1px solid #ccc;
+}
+.search-container .suggestions {
+  /* TODO */
+  border-top: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+}
+
+ul {
+  /* TODO */
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+ul.has-suggestions {
+  /* TODO */
+}
+ul li {
+  /* TODO */
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+ul li:hover {
+  /* TODO */
+  background: rgb(250, 204, 119);
+}
+
+input {
+  /* TODO */
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: large;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .fa-solid {
+  width: 25px;
+  color: #555;
+  font-size: large;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #333;
+  font-size: large;
+}
