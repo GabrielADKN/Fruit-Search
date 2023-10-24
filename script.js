@@ -26,7 +26,7 @@ function searchHandler(e) {
 //function to create a new suggestion list
 function showSuggestions(results, inputVal) {
 	//TODO:
-    const content = results.map(fruit => `<li>${inputVal}${fruit.slice(inputVal.length)}</li>`);
+    const content = results.map(fruit => `<li>${fruit}</li>`);
     suggestions.innerHTML = content.join('');
 }
 
