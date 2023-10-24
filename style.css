@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-:focus {
-  /* TODO */
-}
-
 body {
   /* TODO */
   background-image: linear-gradient(to right, orange, #ff6347);
@@ -47,9 +43,7 @@ ul {
   border-top: 1px solid #999;
   padding: 15px 10px;
 }
-ul.has-suggestions {
-  /* TODO */
-}
+
 ul li {
   /* TODO */
   list-style: none;
