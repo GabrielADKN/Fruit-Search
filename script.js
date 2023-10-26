@@ -26,7 +26,14 @@ function searchHandler(e) {
 //function to create a new suggestion list
 function showSuggestions(results, inputVal) {
 	//TODO:
-    const content = results.map(fruit => `<li>${fruit}</li>`);
+    const content = results.map(fruit => {
+        const startIndex = fruit.toLowerCase().indexOf(inputVal.toLowerCase());
+        const before = fruit.slice(0, startIndex);
+        const match = fruit.slice(startIndex, startIndex + inputVal.length);
+        const after = fruit.slice(startIndex + inputVal.length);
+        console.log(startIndex + after.length) ;
+        return `<li>${before}<strong>${match}</strong>${after}</li>`;
+    });
     suggestions.innerHTML = content.join('');
 }
 
